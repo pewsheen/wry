@@ -788,10 +788,10 @@ impl InnerWebView {
           );
 
           // Disable media dialogs
-          ctl.add_method(
-            sel!(webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:),
-            request_media_capture_permission as extern "C" fn(&Object, Sel, id, id, id, id, id),
-          );
+          // ctl.add_method(
+          //   sel!(webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:),
+          //   request_media_capture_permission as extern "C" fn(&Object, Sel, id, id, id, id, id),
+          // );
 
           ctl.register()
         }
